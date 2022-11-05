@@ -18,24 +18,26 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at');
             $table->string('password');
+            $table->foreignId('roles_id')->default(2)->constrained();
+            $table->string('type_dni');
+            $table->integer('dni');
+            $table->integer('phone');
+            $table->boolean('approved')->default(false);
+            $table->rememberToken();
+            $table->timestamps();
             // $table->boolean('is_admin')->nullable()->default(false);
-            $table->foreignId('questions_id')->nullable()->constrained();
-            $table->foreignId('roles_id')->default(1)->constrained();
+            // $table->foreignId('questions_id')->nullable()->constrained();
+
             // $table->unsignedBigInteger('roles_id');
             // $table->foreign('roles_id')->references('id')->on('roles');
 
             // $table->unsignedBigInteger('questions_id');
             // $table->foreign('questions_id')->references('id')->on('questions');
 
-            $table->string('type_dni')->nullable();
-            $table->integer('dni')->nullable();
-            $table->integer('phone')->nullable();
-            $table->boolean('approved')->default(false);
-            $table->rememberToken();
-            $table->timestamps();
-            
+
+
         });
     }
 

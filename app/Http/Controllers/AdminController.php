@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use Illuminate\Http\Request;
+
 
 class AdminController extends Controller
 {
     public function index(){
-        return 'Admin';
+        return response([
+            'Administrador' => Admin::all(),
+        ],200);
     }
 }

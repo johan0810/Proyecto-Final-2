@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\NewPasswordController;
 use App\Http\Controllers\QuestionsController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,8 @@ Route::get('/admin',[AdminController::class, 'index'])->middleware('auth.admin')
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+
+    
 });
 
 Route::post('forgot-password', [NewPasswordController::class, 'ForgotPassword']);
@@ -39,4 +42,10 @@ Route::post('reset-password', [NewPasswordController::class, 'reset']);
 
 // Route::post('agregar_pregunta', [AuthController::class, 'reset']);
 Route::resource('/questions', QuestionsController::class);
+
+Route::resource('/users', UsersController::class);
+Route::get('/admin/delete-all', [UsersController::class, 'delete_all']);
+
+Route::resource('/admin', AdminController::class);
+
 Route::resource('/answers', AnswersController::class);

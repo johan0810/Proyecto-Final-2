@@ -27,9 +27,9 @@ class AuthController extends Controller {
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            // 'type_dni' => $request->type_dni,
-            // 'dni' => $request->dni,
-            // 'phone'=>$request->phone,
+            'type_dni' => $request->type_dni,
+            'dni' => $request->dni,
+            'phone'=>$request->phone,
         ]);
 
         // $new_user = User::create($request->all());
@@ -59,6 +59,7 @@ class AuthController extends Controller {
 
         return response([
             'user' =>  $request->user(),
+            'roles' => $request->user()->roles->description, //User role code (A: amdin, U: user)
             'token' => $request->user()->createToken('secret')->plainTextToken
         ], 200);
 
