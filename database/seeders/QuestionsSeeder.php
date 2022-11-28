@@ -20,153 +20,168 @@ class QuestionsSeeder extends Seeder
         Questions::insert([
             [
 
-                'question' => '',
+                'id' => 1,
+
+                'question' => '¿Cómo sería para ti un día perfecto?',
             ],
 
             [
+                'id' => 2,
 
-                'question' => '',
+                'question' => '¿Qué es algo que no soportas de la sociedad?
+                ',
             ],
 
             [
+                'id' => 3,
 
-                'question' => '',
+                'question' => '¿Cuál es la peor cita que has tenido en la vida?',
             ],
 
             [
+                'id' => 4,
 
-                'question' => '',
+                'question' => '¿Cuál es la mayor locura que has hecho por amor?',
             ],
 
             [
+                'id' => 5,
 
-                'question' => '',
+                'question' => '¿Crees que el amor puede durar para siempre?',
             ],
 
             [
+                'id' => 6,
 
-                'question' => '',
+                'question' => '¿Te resulta fácil confiar en los demás?',
             ],
 
             [
+                'id' => 7,
 
-                'question' => '',
+                'question' => 'Si pudieras tener un superpoder, ¿cuál sería?',
             ],
 
             [
+                'id' => 8,
 
-                'question' => '',
+
+                'question' => 'Si pudieras cambiar una sola cosa de ti, ¿cuál sería?',
             ],
 
             [
+                'id' => 9,
 
-                'question' => '',
+
+                'question' => '¿Qué música te hace pensar en los momentos más felices de tu vida?',
             ],
 
             [
+                'id' => 10,
 
-                'question' => '',
+
+                'question' => '¿Qué tipo de música o canción define mejor tu personalidad?',
             ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
 
-            [
+            // [
 
-                'question' => '',
-            ],
+            //     'question' => '',
+            // ],
             
         ]);
     }
