@@ -15,6 +15,159 @@ class QuestionsSeeder extends Seeder
      */
     public function run()
     {
-        Questions::factory(20)->create();
+        // Questions::factory(20)->create();
+
+        Questions::insert([
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+
+            [
+
+                'question' => '',
+            ],
+            
+        ]);
     }
 }

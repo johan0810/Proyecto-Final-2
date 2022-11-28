@@ -72,7 +72,6 @@ class UsersController extends Controller
             'phone' => $request->phone,
             'image' => $url_image,
 
-
         ]);
 
         return response(
