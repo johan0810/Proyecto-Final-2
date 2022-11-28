@@ -29,11 +29,11 @@ Route::middleware('auth:sanctum')->get('/logout', [AuthController::class, 'logou
 Route::get('/admin',[AdminController::class, 'index'])->middleware('auth.admin')->name('admin.index');
 
 
-
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 
-    
+    Route::post('users/update/{users}', [UsersController::class, 'update']);
+     
 });
 
 Route::post('forgot-password', [NewPasswordController::class, 'ForgotPassword']);

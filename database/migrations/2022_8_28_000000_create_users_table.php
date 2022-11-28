@@ -25,6 +25,7 @@ return new class extends Migration
             $table->integer('dni');
             $table->integer('phone');
             $table->boolean('approved')->default(false);
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
             // $table->boolean('is_admin')->nullable()->default(false);

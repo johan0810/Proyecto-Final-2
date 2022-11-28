@@ -46,6 +46,7 @@ class QuestionsController extends Controller
 
         $new_question = Questions::create($request->all());
         $new_question->save();
+        
     }
 
     /**
