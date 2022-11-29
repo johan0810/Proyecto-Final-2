@@ -38,50 +38,50 @@ class QuestionsSeeder extends Seeder
                 'question' => '¿Cuál es la peor cita que has tenido en la vida?',
             ],
 
-            [
-                'id' => 4,
+            // [
+            //     'id' => 4,
 
-                'question' => '¿Cuál es la mayor locura que has hecho por amor?',
-            ],
+            //     'question' => '¿Cuál es la mayor locura que has hecho por amor?',
+            // ],
 
-            [
-                'id' => 5,
+            // [
+            //     'id' => 5,
 
-                'question' => '¿Crees que el amor puede durar para siempre?',
-            ],
+            //     'question' => '¿Crees que el amor puede durar para siempre?',
+            // ],
 
-            [
-                'id' => 6,
+            // [
+            //     'id' => 6,
 
-                'question' => '¿Te resulta fácil confiar en los demás?',
-            ],
+            //     'question' => '¿Te resulta fácil confiar en los demás?',
+            // ],
 
-            [
-                'id' => 7,
+            // [
+            //     'id' => 7,
 
-                'question' => 'Si pudieras tener un superpoder, ¿cuál sería?',
-            ],
+            //     'question' => 'Si pudieras tener un superpoder, ¿cuál sería?',
+            // ],
 
-            [
-                'id' => 8,
-
-
-                'question' => 'Si pudieras cambiar una sola cosa de ti, ¿cuál sería?',
-            ],
-
-            [
-                'id' => 9,
+            // [
+            //     'id' => 8,
 
 
-                'question' => '¿Qué música te hace pensar en los momentos más felices de tu vida?',
-            ],
+            //     'question' => 'Si pudieras cambiar una sola cosa de ti, ¿cuál sería?',
+            // ],
 
-            [
-                'id' => 10,
+            // [
+            //     'id' => 9,
 
 
-                'question' => '¿Qué tipo de música o canción define mejor tu personalidad?',
-            ],
+            //     'question' => '¿Qué música te hace pensar en los momentos más felices de tu vida?',
+            // ],
+
+            // [
+            //     'id' => 10,
+
+
+            //     'question' => '¿Qué tipo de música o canción define mejor tu personalidad?',
+            // ],
 
             // [
 
