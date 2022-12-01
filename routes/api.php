@@ -42,6 +42,9 @@ Route::post('reset-password', [NewPasswordController::class, 'reset']);
 
 // Route::post('agregar_pregunta', [AuthController::class, 'reset']);
 Route::resource('/questions', QuestionsController::class);
+Route::get('/test', [QuestionsController::class, 'test']);
+Route::post('/test/answers', [QuestionsController::class, 'answers']);
+
 
 Route::resource('/users', UsersController::class);
 Route::get('/admin/delete-all', [UsersController::class, 'delete_all']);

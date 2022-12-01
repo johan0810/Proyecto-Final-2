@@ -46,7 +46,6 @@ class QuestionsController extends Controller
 
         $new_question = Questions::create($request->all());
         $new_question->save();
-        
     }
 
     /**
@@ -84,11 +83,8 @@ class QuestionsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $questions=Questions::find($id);
+        $questions = Questions::find($id);
         $questions->fill($request->all())->save();
-
-
-     
     }
 
     /**
@@ -101,5 +97,75 @@ class QuestionsController extends Controller
     {
         $questions = Questions::find($id);
         $questions->delete();
+    }
+
+
+    public function test()
+    {
+        $list_questions = Questions::all();
+        $shuffle = $list_questions->shuffle();
+        $list_10 = $shuffle->shift(3);
+
+
+        return response(['question' => $list_10]); //->shuffle()]);
+        // return $list_questions;
+    }
+
+    public function answers(Request $request)
+    {
+        // $answer_list = [];
+
+        // foreach ($request->questions as $question) {
+
+        //     $q = Questions::find($question['id']);
+        //     $shuffle = $q->answers_list->shuffle();
+        //     $cont = 0;
+
+        //     foreach ($shuffle as $a) {
+        //         if ($a->answer == 1) {
+        //             array_push($answer_list, $a);
+        //             $cont++;
+        //         } else if ($cont < 3) {
+        //             array_push($answer_list, $a);
+        //             $cont++;
+        //         }
+        //     }
+
+        // }
+
+        // shuffle($answer_list);
+
+        // return response(['answers' => $answer_list]); 
+
+        $question_list = [];
+
+        foreach ($request->questions as $question) {
+
+            $q = Questions::find($question['id']);
+            $shuffle = $q->answers_list->shuffle();
+            $answer_list = [];
+            $cont = 0;
+
+            foreach ($shuffle as $a) {
+                if ($a->answer == 1) {
+                    array_push($answer_list, $a);
+                    $cont++;
+                } else if ($cont < 4) {
+                    array_push($answer_list, $a);
+                    $cont++;
+                }
+            }
+
+            shuffle($answer_list);
+
+            $question = (object) [
+                'question' => $q->question,
+                'answers' => $answer_list
+            ];
+
+            array_push($question_list, $question);
+        }
+
+        return response(['questions' => $question_list]);
     }
 }
