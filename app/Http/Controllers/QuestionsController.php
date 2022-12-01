@@ -106,6 +106,8 @@ class QuestionsController extends Controller
         $shuffle = $list_questions->shuffle();
         $list_10 = $shuffle->shift(3);
 
+        
+
 
         return response(['question' => $list_10]); //->shuffle()]);
         // return $list_questions;
