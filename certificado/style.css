@@ -1,0 +1,143 @@
+@font-face{
+    font-family: titulo;
+    src: url("TitanOne-Regular.ttf")
+}
+@font-face{
+    font-family: name;
+    src: url("Rochester-Regular.ttf")
+}
+body {
+    
+    /* width: 1200px;
+    height: 900px; */
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    /* flex-wrap: wrap; */
+    
+}
+
+hr{
+    /* border: 5px solid red; */
+    display: flex;
+    position: absolute;
+    top: 45%;
+    width: 50%;
+    
+}
+#firma1{
+    top: 80%;
+    width:10%;
+   
+    left: 25%;
+}
+#firma2{
+    
+    top: 80%;
+    width:10%;
+   
+    right: 25%;
+}
+.firma{
+    top: 75%;
+    left: 27%;
+    width: 7%;
+    height: 6%;
+    display: flex;
+    position: absolute;
+}
+
+.certificado-img {
+    display: flex;
+    width: 100%;
+    height:100%;
+    /* border: 1px solid red; */
+    
+}
+
+.logo {
+    top: 32%;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    position: absolute;
+    opacity: 0.2;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+
+.certificado {
+   overflow:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:50%;
+    height: 50%; */
+    /* width: 1200px;
+    height: 900px; */
+    /* margin-left: 30%; */
+    /* background-image: url("/certificado1.jpg    ");
+    background-size: cover; */
+}
+
+.titulo {
+    
+    display: flex;
+    position: absolute;
+    top: 9%;
+    
+    font-family: titulo;
+}
+.titulo h1 {
+    font-size:5rem;
+    
+}
+.subtitulo {
+    display: flex;
+    position: absolute;
+    top: 25%;
+}
+.nombre h1 {
+    font-size:5rem;
+  
+}
+.nombre  {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    font-family: name;
+    
+    border: 0px solid red;
+}
+
+.motivo{
+    display: flex;
+    position: absolute;
+    top: 48%;
+    border: 0px solid red;
+    text-align: center;
+    
+}
+
+
+.encargado1{
+    display: flex;
+    position: absolute;
+    top: 82%;
+    width:10%;
+    height:10px;
+    left: 26%;
+}
+.encargado2{
+    display: flex;
+    position: absolute;
+    top: 82%;
+    width:10%;
+    height:10px;
+    right:23%;
+}
+
+
+
