@@ -18,7 +18,7 @@ class QuestionsController extends Controller
     {
         $list_questions = Questions::orderBy('question', 'asc')->get();
         return response(['question' => $list_questions]); //->shuffle()]);
-        // return $list_questions;
+        // return $list_questions;  
     }
 
 
