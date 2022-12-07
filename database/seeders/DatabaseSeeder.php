@@ -40,6 +40,19 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => date("Y/m/d"), //verified today
                 'created_at' => date("Y/m/d"), //created today
                 'password' => Hash::make('admin123') //default admin password: admin123
+            ],
+
+            [
+                'roles_id' =>  2, //admin role id
+                'name' =>  'Johan Quiñones', //default name
+                'email' => 'feliperomero978@hotmail.com', //default email
+                'type_dni' => 'CC', //default Type dni
+                'dni' => '1111111111', //default dni
+                'phone' => '1111111111', //default phone
+                'approved' => '0', //default approved
+                'email_verified_at' => date("Y/m/d"), //verified today
+                'created_at' => date("Y/m/d"), //created today
+                'password' => Hash::make('felipe12') //default admin password: admin123
             ]
         );
 

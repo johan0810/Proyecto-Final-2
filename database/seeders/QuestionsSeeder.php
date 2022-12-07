@@ -22,66 +22,66 @@ class QuestionsSeeder extends Seeder
 
                 'id' => 1,
 
-                'question' => '¿Cómo sería para ti un día perfecto?',
+                'question' => '¿Cuantos sitios de parqueo brinda el Sena?',
             ],
 
             [
                 'id' => 2,
 
-                'question' => '¿Qué es algo que no soportas de la sociedad?
+                'question' => '¿En qué lugar está ubicado el gimnasio?
                 ',
             ],
 
             [
                 'id' => 3,
 
-                'question' => '¿Cuál es la peor cita que has tenido en la vida?',
+                'question' => '¿Cuantas plantas (pisos) tiene las instalaciones del Sena?',
             ],
 
-            // [
-            //     'id' => 4,
+            [
+                'id' => 4,
 
-            //     'question' => '¿Cuál es la mayor locura que has hecho por amor?',
-            // ],
+                'question' => '¿Con cuantas oficinas administrativas consta el Sena en las instalaciones del CTA?',
+            ],
 
-            // [
-            //     'id' => 5,
+            [
+                'id' => 5,
 
-            //     'question' => '¿Crees que el amor puede durar para siempre?',
-            // ],
+                'question' => '¿En que piso podemos encontrar el ambiente de Gastronomía?',
+            ],
 
-            // [
-            //     'id' => 6,
+            [
+                'id' => 6,
 
-            //     'question' => '¿Te resulta fácil confiar en los demás?',
-            // ],
+                'question' => '¿El taller de mecánica trabaja con elevador hidráulico?',
+            ],
 
-            // [
-            //     'id' => 7,
+            [
+                'id' => 7,
 
-            //     'question' => 'Si pudieras tener un superpoder, ¿cuál sería?',
-            // ],
+                'question' => '¿En qué piso podemos encontrar el ambiente de redes y fibra óptica?',
+            ],
 
-            // [
-            //     'id' => 8,
-
-
-            //     'question' => 'Si pudieras cambiar una sola cosa de ti, ¿cuál sería?',
-            // ],
-
-            // [
-            //     'id' => 9,
+            [
+                'id' => 8,
 
 
-            //     'question' => '¿Qué música te hace pensar en los momentos más felices de tu vida?',
-            // ],
+                'question' => '¿De qué color es el nuevo Logo del Sena?',
+            ],
 
-            // [
-            //     'id' => 10,
+            [
+                'id' => 9,
 
 
-            //     'question' => '¿Qué tipo de música o canción define mejor tu personalidad?',
-            // ],
+                'question' => '¿Que significado tienen las siglas CTA?',
+            ],
+
+            [
+                'id' => 10,
+
+
+                'question' => '¿Cual es la cantidad de baños por piso que tienen acceso los Aprendices?',
+            ],
 
             // [
 

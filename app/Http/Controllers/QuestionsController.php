@@ -87,6 +87,7 @@ class QuestionsController extends Controller
         $questions->fill($request->all())->save();
     }
 
+    
     /**
      * Remove the specified resource from storage.
      *
@@ -104,7 +105,7 @@ class QuestionsController extends Controller
     {
         $list_questions = Questions::all();
         $shuffle = $list_questions->shuffle();
-        $list_10 = $shuffle->shift(3);
+        $list_10 = $shuffle->shift(10);
 
         
 
