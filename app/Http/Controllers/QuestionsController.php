@@ -105,7 +105,7 @@ class QuestionsController extends Controller
     {
         $list_questions = Questions::all();
         $shuffle = $list_questions->shuffle();
-        $list_10 = $shuffle->shift(10);
+        $list_10 = $shuffle->shift(5);
 
         
 
