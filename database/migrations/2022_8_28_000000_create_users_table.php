@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('password');
             $table->foreignId('roles_id')->default(2)->constrained();
             $table->string('type_dni');
-            $table->integer('dni');
-            $table->integer('phone');
+            $table->bigInteger('dni');
+            $table->bigInteger('phone');
             $table->boolean('approved')->default(false);
             $table->string('image')->nullable();
             $table->rememberToken();
